@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { DashboardCovidModule } from './dashboard-covid';
+import { DashboardModule } from './dashboard';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { DashboardCovidModule } from './dashboard-covid';
   ],
   imports: [
     BrowserModule,
-    DashboardCovidModule
+    FormsModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

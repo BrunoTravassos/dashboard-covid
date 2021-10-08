@@ -1,0 +1,24 @@
+<form class="form mt-3 col-6" #dadosForm="ngForm" [hidden]="formFlag">
+<h3 class="text-muted mb-4">Insira os valores em numero de mortos para cada mês</h3>
+    <label for="mes1">JUNHO</label>
+    <input  type="number"  min='0' name="junho" id="junho" class="form-control" [(ngModel)]="junho" required>
+    <br>
+    <label for="mes2">JULHO</label>
+    <input  type="number"  min='0' type="text" name="julho" id="julho" class="form-control" [(ngModel)]="julho" required>
+    <br>
+    <label for="mes3">AGOSTO</label>
+    <input  type="number"  min='0' type="text" name="agosto" id="agosto" class="form-control" [(ngModel)]="agosto" required>
+    <br>
+    <label for="mes4">SETEMBRO</label>
+    <input  type="number"  min='0' type="text" name="setembro" id="setembro" class="form-control" [(ngModel)]="setembro" required>
+   <!-- pra funcionar o disabled tem que ter o required em todos os campos do form e usar o @viewchiçld -->
+    <button class="btn btn-primary mt-5 mb-4" type="submit" value="definirDados" (click)="definirDados()" [disabled]="!dadosForm.form.valid"> Enviar </button>
+
+</form>
+
+<div id="pie_chart"></div>
+<div id="3d_pie_chart"></div>
+<div id="donut_chart"></div>
+<div id="bar_chart"></div>
+<div id="line_chart"></div>
+<div id="column_chart"></div>

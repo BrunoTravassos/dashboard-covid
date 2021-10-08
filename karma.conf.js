@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/dashboard-covid'),
+      dir: require('path').join(__dirname, './coverage/coque-dash'),
       subdir: '.',
       reporters: [
         { type: 'html' },

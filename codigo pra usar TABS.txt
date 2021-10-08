@@ -1,0 +1,43 @@
+
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" [hidden]="!formFlag">
+
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pie_chart-tab" data-bs-toggle="tab" data-bs-target="#pie_chart"
+            type="button" role="tab" aria-controls="pie_chart" aria-selected="true">Pizza</button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="3d_pie_chart-tab" data-bs-toggle="tab" data-bs-target="#pie3d_chart" type="button"
+            role="tab" aria-controls="3d_pie_chart" aria-selected="false">Pizza 3d</button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="donut_chart-tab" data-bs-toggle="tab" data-bs-target="#donut_chart" type="button"
+            role="tab" aria-controls="donut_chart" aria-selected="false">Rosca</button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="bar_chart-tab" data-bs-toggle="tab" data-bs-target="#bar_chart" type="button"
+            role="tab" aria-controls="bar_chart" aria-selected="false">Barra</button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="line_chart-tab" data-bs-toggle="tab" data-bs-target="#line_chart" type="button"
+            role="tab" aria-controls="line_chart" aria-selected="false">Linha</button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="column_chart-tab" data-bs-toggle="tab" data-bs-target="#column_chart" type="button"
+            role="tab" aria-controls="column_chart" aria-selected="false">Coluna</button>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade show active" role="tabpanel" id="pie_chart"></div>
+    <div class="tab-pane fade show" role="tabpanel" id="pie3d_chart"></div>
+    <div class="tab-pane fade show" role="tabpanel" id="donut_chart"></div>
+    <div class="tab-pane fade show" role="tabpanel" id="bar_chart"></div>
+    <div class="tab-pane fade show" role="tabpanel" id="line_chart"></div>
+    <div class="tab-pane fade show" role="tabpanel" id="column_chart"></div>
+</div>
